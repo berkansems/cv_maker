@@ -1,0 +1,28 @@
+{
+      "item": {
+        "table": {
+            "headers": [
+                {
+                    "name": "card_number"
+                },
+                {
+                  "name": "Card_Holders_Name"
+                }
+            ],
+            "rows": [
+                {
+                    "values": [
+                        {
+                          "stringValue": "1122337666"
+                        },
+                        {
+                          "stringValue": "john"
+                      }
+                    ]
+                }
+            ]
+        }
+    },
+    "deidentifyTemplateName":"projects/rsg-dna2b-dev-2c64/deidentifyTemplates/dlp-demo-deid-latest-1645778769451"
+  }
+

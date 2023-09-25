@@ -1,0 +1,151 @@
+%
+% ---------------------------------
+% Ali Shams Resume
+% ---------------------------------
+%
+\documentclass[a4paper,14pt]{article}
+
+% useful packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					    % for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	% other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				    % better formatting of the A4 page
+\usepackage{supertabular} 				    % for grades
+\usepackage{titlesec}					    % custom \section
+\usepackage[margin=0.5in]{geometry}
+
+% setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+    SmallCapsFont = Lora-Regular.ttf,
+    BoldFont = Lora-Bold.ttf,
+    ItalicFont = Lora-Italic.ttf
+]
+{Lora-Regular.ttf}
+
+% cv sections inspired by:
+\titleformat{\section}{\normalsize\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+% tweak a bit the top margin
+
+% italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.15\paperheight}
+\setlength{\parindent}{0pt}
+
+% -- begin document
+\begin{document}
+
+\pagestyle{empty}    % non-numbered pages
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+% -- title
+\par {\centering {\Large Berkan \textsc{Şems}\\}}
+\par {\centering {\footnotesize  \textsc{Full-Stack Developer}\\}}
+
+% -- sections
+% contact info
+\section{Contact Info}
+\begin{tabular}{rlrl}
+
+    \footnotesize{Address:}     & \footnotesize{İzmir, Türkiye} & \footnotesize{Phone:} & \footnotesize{+90 538 060 5040}\\
+    \footnotesize{Email:}       & \href{mailto:berkansems@gmail.com}{\footnotesize berkansems@gmail.com} &     \footnotesize{Linkedin:}    & \href{https://www.linkedin.com/in/berkan-şems-44ba2681}{ \footnotesize www.linkedin.com/in/berkan-şems-44ba2681}\\
+
+    \footnotesize{Github:}      & \href{https://github.com/berkansems}{\footnotesize www.github.com/berkansems}
+
+\end{tabular}
+
+\section{Summery}
+\begin{tabular}{rl}
+
+&\footnotesize{I am a committed full-stack developer, primarily specializing in backend development, while also demonstrating proficiency in} \\
+&\footnotesize{frontend development. My skills encompass database design, the creation of robust APIs, thorough testing, and a strong passion} \\
+&\footnotesize{for UI development. With a solid grounding in software engineering, both on the backend and frontend, I possess the expertise } \\
+&\footnotesize{to conceptualize and implement innovative solutions that adhere to best practices, ensuring the creation of a platform that is} \\
+&\footnotesize{testable, maintainable, and reliable.} \\
+\end{tabular}\\
+
+% skills & expertise
+\section{Skills and Expertise}
+\begin{tabular}{rl}
+
+    &\footnotesize{Programming: \textbf{Python, JavaScript, SQL.} \\
+    &\footnotesize{Core Competencies: \textbf{Django, Django REST, FastAPI, Flask, Angular, ElasticSearch, Docker, RabbitMQ, Jira, Bitbucket, Sentry, Graphana.}}\\
+
+\end{tabular}\\
+
+% work experience (page 1)
+\section{Work Experience}
+\begin{tabular}{p{2cm}|p{15.5cm}}
+
+    \multicolumn{2}{c}{}\\
+    \footnotesize{May 2022 - now}
+    & \textbf{Senior Backend Developer} at \textsc{DOPIGO},
+    İzmir, Türkiye\\
+    &\footnotesize{\textbf{Develop and maintain an e-commerce integration system with 30+ services.}\\
+    &\footnotesize{1- \textbf{Development of Warehouse Management System} project entirely from the ground up using Django.\\
+    &\footnotesize{2- \textbf{Development of Cargo Shipment System} with desiging its apis}\\
+    &\footnotesize{3- Troubleshooting and system \textbf{maintenance}}\\
+    &\footnotesize{4- \textbf{Interact with business stakeholders} to gather business requirements.}\\
+    &\footnotesize{5- Architecting a logging system to monitor and record requests, leveraging \textbf{Kibana} for visualization.}\\
+    &\footnotesize{6- Building \textbf{CI/CD} solutions with \textbf{Github}.}\\
+    &\footnotesize{7- Mentor junior team members for various technical and functional aspects of different implementations.}\\
+
+
+  \end{tabular}\\      
+
+  \begin{tabular}{p{2cm}|p{15.5cm}}
+
+    \multicolumn{2}{c}{}\\
+    \footnotesize{June 2020 - May 2022}
+    & \textbf{Full-Stack Developer} at \textsc{S4IN},
+    İzmir, Türkiye\\
+    &\footnotesize{\textbf{Engaged in the development of various projects, including B2B and B2C solutions, ERP systems, and customized software applications for clients.}\\
+    &\footnotesize{1- \textbf{Maintenance} and incorporation of additional features.}\\
+    &\footnotesize{2- Enhanced the search functionality by implementing \textbf{Elasticsearch}.}\\
+    &\footnotesize{3- Optimize the performance of Django applications, including database queries, caching, and code profiling.}\\
+    &\footnotesize{4- Built an ERP system utilizing \textbf{Angular} and \textbf{Django REST}.}\\
+
+  \end{tabular}\\      
+
+  \begin{tabular}{p{2cm}|p{15.5cm}}
+
+    \multicolumn{2}{c}{}\\
+    \footnotesize{January 2020 - June 2020}
+    & \textbf{Full-Stack Developer} at \textsc{IZERSOFT},
+    İzmir, Türkiye\\
+    &\footnotesize{\textbf{Creating dynamic web pages and solutions tailored to individual customers.}\\
+    &\footnotesize{1- Developing \textbf{Dynamic} web pages.}\\
+    &\footnotesize{2- Enhance the user experience by incorporating \textbf{JavaScript plugins}.}\\
+    &\footnotesize{3- contribute to documenting code, APIs, and processes for future reference.}\\
+
+  \end{tabular}\\    
+
+
+
+% education
+\section{Education}
+\begin{tabular}{rp{12cm}}
+
+    \footnotesize{2011-2014} & \footnotesize{M.Sc, Hacettepe University, Ankara, Türkiye.}\\
+    \footnotesize{2006-2010} & \footnotesize{B.Sc, IA University of Tabriz, Tabriz, Iran.}\\
+
+\end{tabular}\\
+
+
+
+
+
+\end{document}

@@ -1,0 +1,30 @@
+{
+  "item": {
+    "table": {
+        "headers": [
+            {
+                "name": "Card_Number"
+            },
+            {
+              "name": "Card_Holders_Name"
+            }
+        ],
+        "rows": [
+            {
+                "values": [
+                    {
+                      "stringValue": "AXEXy3L4D//fj5ura4Hrynj9cDByTUnknm3SpkbDlaGAMAIi9aw="
+                    },
+                    {
+                      "stringValue": "ASLDC7Vux36Oq3B5HmOSMBCO1MWpXgKQ5rJd+Uhg+nc2"
+                  }
+                ]
+            }
+        ]
+    }
+},
+"reidentifyTemplateName": "projects/rsg-dna2b-dev-2c64/deidentifyTemplates/dlp-demo-reid-latest-1645778769451"
+
+
+}
+
